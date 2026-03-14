@@ -1,0 +1,17 @@
+{
+  "name": "industry_reports",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@openrouter/ai-sdk-provider": "^2.3.1",
+    "@tavily/ai-sdk": "^0.4.1",
+    "ai": "^6.0.116"
+  }
+}
