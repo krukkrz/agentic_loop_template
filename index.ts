@@ -7,8 +7,14 @@ const openrouter = createOpenRouter({
     apiKey: process.env.OPENROUTER_API_KEY,
 });
 
+// const model = "openai/gpt-4o-mini"; //$0,15
+const model = "openai/gpt-5-mini"; //$0,25
+// const model = "anthropic/claude-3.5-haiku"; //$0,20
+// const model = "anthropic/claude-sonnet-4.6"; $3,00
+
+
 const agent = new ToolLoopAgent({
-    model: openrouter("openai/gpt-4o-mini-2024-07-18"),
+    model: openrouter(model),
     stopWhen: stepCountIs(10),
     tools: {
         // Add your tools here. See src/tools/ for available tools.
